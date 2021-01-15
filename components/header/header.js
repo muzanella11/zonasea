@@ -26,17 +26,17 @@ export default {
         {
           title: 'benefit',
           label: 'Benefit',
-          url: 'javascript:;'
+          url: 'benefit'
         },
         {
           title: 'cara-kerja',
           label: 'Cara Kerja',
-          url: 'javascript:;'
+          url: 'caraKerja'
         },
         {
           title: 'tentang-kami',
           label: 'Tentang Kami',
-          url: 'javascript:;'
+          url: 'about'
         }
       ]
     }
@@ -51,6 +51,18 @@ export default {
       if (this.title) {
         this.innerTitle = this.title
       }
+    },
+
+    scrollTo (sectionName) {
+      // get offset element
+      const elName = document.getElementById(sectionName)
+      const pos = elName.offsetTop
+      // animated top scrolling
+      window.scrollTo({
+        top: pos,
+        left: 0,
+        behavior: 'smooth'
+      })
     }
   }
 }

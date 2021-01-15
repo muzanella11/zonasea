@@ -12,7 +12,7 @@
       </div>
     </div>
 
-    <div class="footer__second-layer">
+    <div id="about" class="footer__second-layer">
       <div class="container">
         <div class="row pt-5">
           <div class="col-md-12 text-center">

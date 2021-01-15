@@ -16,9 +16,8 @@
           <b-nav-item
             v-for="(item, index) in menus"
             :key="index"
-            :to="item.url"
-            exact
             class="p-2 text-primary"
+            @click="scrollTo(item.url)"
           >
             {{ item.label }}
           </b-nav-item>

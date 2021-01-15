@@ -19,6 +19,13 @@
         align-items: center;
       }
     }
+
+    & .nav {
+      &-link {
+        color: $color-primary;
+        font-weight: 500;
+      }
+    }
   }
 }
 
