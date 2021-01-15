@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+/** This Place For Variable Style **/
+@import './variables';
+
+/* ************************************ */
+
+/** This Place For Variable Style **/
+@import './function';
+
+/* ************************************ */
+
+/** This Place For Variable Style **/
+@import './mixins';
+
+/* ************************************ */
+
+/** This Place For Variable Style **/
+@import './vendor/bootstrap';
+@import './vendor/element-app';
+@import './vendor/slick';
+@import './core/master-apps.scss';
+
+/* ************************************ */

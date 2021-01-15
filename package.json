@@ -1,0 +1,50 @@
+{
+  "name": "zonasea",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint:js:fix": "eslint --ext .js,.vue . --fix",
+    "lint:style": "stylelint **/*.{vue,scss} --ignore-path .gitignore",
+    "lint:style:fix": "stylelint **/*.{vue,scss} --fix",
+    "lint": "yarn lint:js && yarn lint:style",
+    "lint:fix": "npm-run-all --parallel lint:*:fix",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@nuxt/babel-preset-app": "^2.14.12",
+    "@nuxtjs/pwa": "^3.0.2",
+    "babel-plugin-component": "^1.1.1",
+    "bootstrap": "^4.5.3",
+    "bootstrap-vue": "^2.17.3",
+    "core-js": "^3.6.5",
+    "element-ui": "^2.14.1",
+    "fibers": "^5.0.0",
+    "jquery": "^3.5.1",
+    "node-sass": "^5.0.0",
+    "npm-run-all": "^4.1.5",
+    "nuxt": "^2.14.6",
+    "sass-loader": "^10.1.0",
+    "slick-carousel": "^1.8.1",
+    "webpack": "^5.12.1"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^3.1.0",
+    "@nuxtjs/eslint-module": "^2.0.0",
+    "@nuxtjs/stylelint-module": "^4.0.0",
+    "@vue/test-utils": "^1.1.0",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.5.0",
+    "eslint": "^7.10.0",
+    "eslint-plugin-nuxt": "^1.0.0",
+    "jest": "^26.5.0",
+    "stylelint": "^13.7.2",
+    "stylelint-config-standard": "^20.0.0",
+    "vue-jest": "^3.0.4"
+  }
+}
