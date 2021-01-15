@@ -1,6 +1,8 @@
 <template>
   <div class="l-homepage">
-    home
+    <div class="container">
+      asd
+    </div>
   </div>
 </template>
 

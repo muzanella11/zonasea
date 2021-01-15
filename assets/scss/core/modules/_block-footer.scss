@@ -8,7 +8,17 @@
 /** This Place For Block Footer **/
 .#{$namespace} {
   & .c-footer {
-    // create an awesome styling here
+    border-radius: 50px 50px 0 0;
+    background: $color-primary;
+    color: $color-white;
+
+    & .brand {
+      max-width: 200px;
+    }
+
+    & .copyright {
+      border-top: 1px solid $color-white;
+    }
   }
 }
 
