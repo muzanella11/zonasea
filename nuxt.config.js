@@ -29,6 +29,7 @@ export default {
   plugins: [
     '@/plugins/element-ui',
     '@/plugins/fontawesome',
+    '@/plugins/vue-parallax',
     { src: '@/plugins/slick', ssr: false }
   ],
 

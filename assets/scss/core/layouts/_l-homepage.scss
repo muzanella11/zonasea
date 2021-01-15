@@ -1,0 +1,174 @@
+/******************************************
+  Some tips for creating layouts :
+  - Add `l` prefix before the name of layouts
+  - Or Just copy paste this structure of styling code into your new layouts styling file
+  - Dont forget to register your layouts into `_layouts.scss`
+******************************************/
+
+/** This Place For Layouts Homepage **/
+.#{$namespace} {
+  & .l-homepage {
+    & .homepage {
+      &__section {
+        &.section {
+          &--hero {
+            background: url('https://zonasea.com/images/kapal-2.jpeg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: 50%;
+            background-repeat: no-repeat;
+            height: auto;
+
+            & .hero {
+              &__wrapper {
+                background: rgba(1, 142, 207, 0.65);
+                padding: 100px 0;
+                height: auto;
+              }
+
+              &-image {
+                max-width: 100%;
+              }
+            }
+
+            & h3 {
+              line-height: 1.5;
+              font-weight: 600;
+              font-size: 30px;
+              margin-bottom: 16px;
+            }
+
+            & p {
+              line-height: 1.5;
+              font-size: 20px;
+            }
+          }
+
+          &--cara-kerja {
+            position: relative;
+            width: 100%;
+
+            & .cara-kerja {
+              &__content {
+                position: relative;
+                overflow: hidden;
+
+                & .content {
+                  &__list {
+                    & .list {
+                      &__cta {
+                        display: block;
+                        background-color: $color-white;
+                        padding: 20px 88px 30px 89px;
+                        width: 100%;
+                        border: none;
+                        outline: 0;
+                        text-align: left;
+                        cursor: pointer;
+                        -webkit-transition: 0.3s;
+                        transition: 0.3s;
+                        font-size: 18px;
+                        border-left: 25px solid $color-white;
+                        color: #BEBEBE;
+
+                        &.active {
+                          color: $color-primary;
+                          border-left: 10px solid $color-primary;
+                          background: #F6F9FE;
+                        }
+
+                        &:hover {
+                          color: $color-primary;
+                          border-left: 10px solid $color-primary;
+                          background: #F6F9FE;
+                        }
+
+                        & .number {
+                          font-size: 35px;
+                          font-weight: 700;
+                        }
+
+                        & .text {
+                          font-weight: 700;
+                          font-size: 20px;
+                        }
+                      }
+                    }
+                  }
+
+                  &__desc {
+                    background-color: #F6F9FE;
+                    text-align: center;
+                    padding: 16px;
+
+                    & .desc {
+                      &__image {
+                        //
+                      }
+                    }
+                  }
+
+                  &__accordions {
+                    border-top: 1px solid rgba(0, 0, 0, 0.125);
+
+                    & .card {
+                      border-radius: 0;
+                      border: none;
+
+                      &-header {
+                        border-radius: 0;
+                      }
+
+                      &-body {
+                        padding: 0;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        & .section {
+          &__title {
+            padding: 64px 0;
+            text-align: center;
+            color: $color-primary;
+            font-size: 40px;
+            font-weight: 600;
+
+            &.title {
+              &--content {
+                font-size: 18px;
+                padding: 0;
+                line-height: 50px;
+              }
+            }
+          }
+
+          &__desc {
+            font-size: 15px;
+            line-height: 25px;
+          }
+
+          &__image {
+            &.image {
+              &--sm {
+                height: 85px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    & .video-wrapper {
+      width: 820px;
+      height: 500px;
+      border-radius: 4px;
+    }
+  }
+}
+
+/* ************************************ */

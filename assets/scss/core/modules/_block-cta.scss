@@ -1,0 +1,29 @@
+/******************************************
+  Some tips for creating blocks / modules :
+  - Add `c` prefix before the name of block or modules
+  - Or Just copy paste this structure of styling code into your new block or components styling file
+  - Dont forget to register your block or modules into `_modules.scss`
+******************************************/
+
+/** This Place For Block Call To Action **/
+.#{$namespace} {
+  & .c-cta {
+    &.cta {
+      &--white {
+        width: 209px;
+        height: 44px;
+        border-radius: 3px;
+        background-color: $color-white;
+        color: $color-primary;
+        font-size: 16px;
+        font-weight: 700;
+
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+/* ************************************ */

@@ -18,7 +18,7 @@
             :key="index"
             :to="item.url"
             exact
-            class="p-2"
+            class="p-2 text-primary"
           >
             {{ item.label }}
           </b-nav-item>

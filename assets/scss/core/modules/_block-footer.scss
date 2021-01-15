@@ -8,9 +8,37 @@
 /** This Place For Block Footer **/
 .#{$namespace} {
   & .c-footer {
-    border-radius: 50px 50px 0 0;
-    background: $color-primary;
-    color: $color-white;
+    & .footer {
+      &__first-layer {
+        background-image: url('https://zonasea.com/images/kapal.jpeg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-color: $color-primary;
+        color: $color-white;
+        text-align: center;
+
+        & .first-layer {
+          &__overlay {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            background: rgba(0, 88, 129, 0.281);
+            height: 500px;
+          }
+        }
+      }
+
+      &__second-layer {
+        border-radius: 50px 50px 0 0;
+        background: $color-primary;
+        color: $color-white;
+        margin-top: -54px;
+        padding-bottom: 24px;
+      }
+    }
 
     & .brand {
       max-width: 200px;
