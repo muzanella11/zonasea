@@ -16,14 +16,19 @@ export default {
       innerTitle: 'Brand',
       menus: [
         {
-          title: 'low-effort',
-          label: 'Low Effort',
-          url: '/low-effort'
+          title: 'benefit',
+          label: 'Benefit',
+          url: 'javascript:;'
         },
         {
-          title: 'high-effort',
-          label: 'High Effort',
-          url: '/high-effort'
+          title: 'cara-kerja',
+          label: 'Cara Kerja',
+          url: 'javascript:;'
+        },
+        {
+          title: 'tentang-kami',
+          label: 'Tentang Kami',
+          url: 'javascript:;'
         }
       ]
     }

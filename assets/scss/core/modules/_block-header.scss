@@ -8,7 +8,17 @@
 /** This Place For Block Header **/
 .#{$namespace} {
   & .c-header {
-    // create an awesome styling here
+    & .header {
+      &__brand {
+        height: 110px;
+      }
+    }
+
+    & .navbar {
+      &-nav {
+        align-items: center;
+      }
+    }
   }
 }
 
