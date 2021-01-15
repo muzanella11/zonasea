@@ -6,7 +6,7 @@
           SUDAH SIAP MUAT KARGO ?
         </h1>
 
-        <button class="btn c-cta cta--white mt-5">
+        <button v-b-modal="'modalSignup'" class="btn c-cta cta--white mt-5">
           Coba 7 hari gratis
         </button>
       </div>

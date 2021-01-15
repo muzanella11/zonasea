@@ -1,3 +1,6 @@
+import ModalSignin from '~/components/modal/modal-signin/template-modal-signin.vue'
+import ModalSignup from '~/components/modal/modal-signup/template-modal-signup.vue'
+
 export default {
   props: {
     isToggleable: {
@@ -9,6 +12,11 @@ export default {
       type: String,
       default: ''
     }
+  },
+
+  components: {
+    ModalSignin,
+    ModalSignup
   },
 
   data () {

@@ -14,7 +14,7 @@
                 Menghubungkan langsung pemilik kapal tug boat, tongkang, tanker, bulk carrier dengan pemilik muatan sawit, batu bara, nikel, solar dan lainnya.
               </p>
 
-              <button class="btn c-cta cta--white mt-5">
+              <button v-b-modal="'modalSignup'" class="btn c-cta cta--white mt-5">
                 Coba 7 hari gratis
               </button>
             </div>

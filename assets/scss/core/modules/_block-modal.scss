@@ -1,0 +1,33 @@
+/******************************************
+  Some tips for creating blocks / modules :
+  - Add `c` prefix before the name of block or modules
+  - Or Just copy paste this structure of styling code into your new block or components styling file
+  - Dont forget to register your block or modules into `_modules.scss`
+******************************************/
+
+/** This Place For Block Modal **/
+.#{$namespace} {
+  & .c-modal {
+    &.modal {
+      &--dialog {
+        & .modal {
+          &-header {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+
+    & .title {
+      font-size: 40px;
+      text-align: center;
+    }
+
+    & .subtitle {
+      font-size: 15px;
+      text-align: center;
+    }
+  }
+}
+
+/* ************************************ */

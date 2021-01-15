@@ -24,19 +24,24 @@
           </b-nav-item>
 
           <b-nav-item>
-            <button class="btn btn-outline-primary pl-4 pr-4">
+            <button v-b-modal="'modalSignin'" class="btn btn-outline-primary pl-4 pr-4">
               Login
             </button>
           </b-nav-item>
 
           <b-nav-item>
-            <button class="btn btn-primary">
+            <button v-b-modal="'modalSignup'" class="btn btn-primary">
               Register
             </button>
           </b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
+
+    <!-- Begin Modal -->
+    <modal-signin />
+    <modal-signup />
+    <!-- End Modal -->
   </header>
 </template>
 
